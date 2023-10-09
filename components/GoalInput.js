@@ -27,11 +27,10 @@ function GoalInput(props) {
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button title="Add Goal" onPress={addGoalHandler} />
-          </View>
-
-          <View style={styles.button}>
             <Button title="Cancel" color="red" onPress={props.onCancel} />
+          </View>
+          <View style={styles.button}>
+            <Button title="Add Goal" onPress={addGoalHandler} color="#fff" />
           </View>
         </View>
       </View>
@@ -56,9 +55,12 @@ const styles = StyleSheet.create({
     margin: 20,
   },
   textInput: {
-    borderColor: '#cccccccc',
+    borderColor: '#efd0ff',
+    backgroundColor: '#DFCCFB',
+    color: '#120438',
+    borderRadius: 6,
     borderWidth: 1,
-    padding: 8,
+    padding: 16,
     width: '100%',
   },
   buttonContainer: {
